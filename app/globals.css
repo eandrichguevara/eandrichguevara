@@ -2,26 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+	--breakpoint-xs: 480px;
+	--breakpoint-md: 850px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	font-family: "Amiko", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 18px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.font-encode-sans {
+	font-family: "Encode Sans SC", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 400;
+	font-variation-settings: "wdth" 87.5;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.font-encode-sans-condensed {
+	font-family: "Encode Sans SC", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 700;
+	font-variation-settings: "wdth" 75;
 }
