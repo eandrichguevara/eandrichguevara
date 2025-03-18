@@ -27,3 +27,9 @@
 	font-weight: 700;
 	font-variation-settings: "wdth" 75;
 }
+
+.bg-texture {
+	background-image: url("/watercolor-paper-texture.webp");
+	background-repeat: repeat;
+	background-size: 512px;
+}
