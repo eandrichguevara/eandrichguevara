@@ -29,7 +29,6 @@
 }
 
 .bg-texture {
-	background-image: url("/watercolor-paper-texture.webp");
 	background-repeat: repeat;
 	background-size: 512px;
 }
