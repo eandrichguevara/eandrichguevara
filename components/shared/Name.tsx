@@ -4,8 +4,6 @@ interface Props {
 
 export default function Name({ className }: Props) {
 	return (
-		<span className={`text-xl font-encode-sans ${className}`}>
-			Emilio Andrich
-		</span>
+		<span className={`font-encode-sans ${className}`}>Emilio Andrich</span>
 	);
 }
