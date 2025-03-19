@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/shared/NavBar";
 import Background from "@/components/shared/Background";
+import { runInThisContext } from "vm";
 
 export const metadata: Metadata = {
 	title: "Portfolio",
@@ -14,7 +15,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="es">
 			<head>
 				<meta charSet="UTF-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
