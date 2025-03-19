@@ -43,7 +43,7 @@ export default function ProjectCard({
 								src={image}
 								width={340}
 								height={180}
-								alt={""}
+								alt={title}
 							/>
 						))}
 					</div>
