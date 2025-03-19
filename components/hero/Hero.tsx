@@ -29,8 +29,8 @@ export default function Hero() {
 						</a>
 					</div>
 				</div>
-				<h1 className="leading-snug text-[4rem] font-encode-sans">
-					Software Engineer
+				<h1 className="leading-snug text-[2rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] font-encode-sans">
+					Desarrollador <span className="text-nowrap">Front End</span>
 				</h1>
 				<p className="mt-8 w-3/4 max-w-[760px]">
 					Soy un desarrollador de soluciones tecnológicas, destacándome por mi
