@@ -11,8 +11,8 @@ import {
 	NextJS,
 	TailwindCSS,
 	Node,
-	Angular,
 } from "@/utils/icons";
+import Link from "next/link";
 
 export default function Hero() {
 	return (
@@ -21,18 +21,23 @@ export default function Hero() {
 				<div className="flex flex-wrap gap-4 items-center">
 					<Name className="text-3xl" />
 					<div className="flex flex-wrap gap-4 items-center">
-						<a
+						<Link
 							href={"https://www.linkedin.com/in/emilio-andrich-guevara/"}
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<LinkedIn className="w-8 h-8" />
-						</a>
-						<a href={"https://github.com/eandrichguevara"} target="_blank">
+						</Link>
+						<Link
+							href={"https://github.com/eandrichguevara"}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<Github className="w-8 h-8" />
-						</a>
+						</Link>
 					</div>
 				</div>
-				<h1 className="leading-snug text-[2rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] font-encode-sans">
+				<h1 className="mt-4 md:mt-0 leading-snug text-[2.3rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] font-encode-sans">
 					Desarrollador <span className="text-nowrap">Front End</span>
 				</h1>
 				<p className="mt-8 w-3/4 max-w-[760px]">
