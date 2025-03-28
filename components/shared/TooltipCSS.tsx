@@ -1,11 +1,19 @@
 "use client";
 import { useMediaQuery } from "@uidotdev/usehooks";
+import dynamic from "next/dynamic";
 
 interface Props {
 	children: React.ReactNode;
 	content: React.ReactNode;
 	disabled?: boolean;
 }
+
+export const TooltipClient = dynamic(
+	() => import("@/components/shared/TooltipCSS"),
+	{
+		ssr: false,
+	}
+);
 
 export default function Tooltip({
 	children,

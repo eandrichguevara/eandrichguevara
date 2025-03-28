@@ -1,5 +1,5 @@
 import Name from "@/components/shared/Name";
-import Tooltip from "@/components/shared/TooltipCSS";
+import { TooltipClient as Tooltip } from "@/components/shared/TooltipCSS";
 import {
 	Github,
 	HTML,
