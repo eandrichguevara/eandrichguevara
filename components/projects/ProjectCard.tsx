@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { TechBrand, techIcons } from "@/utils/icons";
 import { Project } from "@/utils/projects";
-import Tooltip from "@/components/shared/TooltipCSS";
+import { TooltipClient as Tooltip } from "@/components/shared/TooltipCSS";
 import Link from "next/link";
 import LinkIcon from "@/components/icons/Link";
 
@@ -36,7 +36,7 @@ export default function ProjectCard({
 								key={title + index}
 								className={`${
 									index === 0 ? "" : "absolute"
-								} min-h-32 object-cover transition-all duration-200 ${
+								} min-h-32 w-[340px] h-[180px] object-cover transition-all duration-200 ${
 									index === 1
 										? "group-hover:opacity-0"
 										: "group-hover:opacity-100"
@@ -56,8 +56,10 @@ export default function ProjectCard({
 				</Link>
 			</Tooltip>
 			<div className="flex flex-wrap justify-start items-center gap-2 rounded-xl bg-sky-800 px-3 py-1">
-				{technologies.map((technology: TechBrand) => (
-					<Tooltip content={technology}>{techIcons[technology]}</Tooltip>
+				{technologies.map((technology: TechBrand, index: number) => (
+					<Tooltip key={"tech_" + index} content={technology}>
+						{techIcons[technology]}
+					</Tooltip>
 				))}
 			</div>
 			<p className="text-white text-sm">{description}</p>
