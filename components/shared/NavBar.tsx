@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Name from "./Name";
 
 export default function NavBar() {
@@ -7,22 +8,22 @@ export default function NavBar() {
 
 			<ul className="flex gap-8 lg:gap-16 lg:flex-row flex-col justify-between items-center lg:mr-80 mt-12 lg:mt-0">
 				<li>
-					<a
+					<Link
 						className="text-white bg-sky-600 lg:text-black lg:bg-transparent"
 						href="#projects"
 					>
 						Proyectos
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a className="text-white bg-sky-600" href="">
+					<Link className="text-white bg-sky-600" href="#links">
 						Links
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a className="text-white bg-sky-600" href="">
+					<Link className="text-white bg-sky-600" href="#contact">
 						Contacto
-					</a>
+					</Link>
 				</li>
 			</ul>
 		</nav>
