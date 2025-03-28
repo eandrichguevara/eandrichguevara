@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { TechBrand, techIcons } from "@/utils/icons";
 import { Project } from "@/utils/projects";
-import Tooltip from "../shared/TooltipCSS";
+import Tooltip from "@/components/shared/TooltipCSS";
 import Link from "next/link";
+import LinkIcon from "@/components/icons/Link";
 
 interface Props {
 	project: Project;
@@ -20,22 +21,22 @@ export default function ProjectCard({
 	id,
 }: Props) {
 	return (
-		<article
-			id={id}
-			className="my-8 w-full max-w-[160px] xs:max-w-[340px] flex flex-col gap-4 mx-auto"
-		>
+		<article id={id} className="my-8 flex flex-col gap-4 mx-auto">
 			<h3 className="text-3xl font-encode-sans text-white">{title}</h3>
 			<Tooltip disabled={!url} content={`Ir a ${name}`}>
 				<Link
 					href={url || `#${id}`}
 					target={url ? "_blank" : "_self"}
-					className={`${url ? "" : "cursor-default"}`}
+					className={`${url ? "group" : "cursor-default pointer-events-none"}`}
+					rel="noopener noreferrer"
 				>
-					<div className="relative rounded-xl overflow-hidden shadow-lg group w-full max-w-[160px] xs:max-w-[340px] h-[160px] sm:h-[180px]">
+					<div className="relative rounded-xl overflow-hidden shadow-lg group">
 						{images.map((image: string, index: number) => (
 							<Image
 								key={title + index}
-								className={`absolute object-cover w-full max-w-[160px] xs:max-w-[340px] h-[160px] sm:h-[180px] transition-all duration-200 ${
+								className={`${
+									index === 0 ? "" : "absolute"
+								} min-h-32 object-cover transition-all duration-200 ${
 									index === 1
 										? "group-hover:opacity-0"
 										: "group-hover:opacity-100"
@@ -46,17 +47,20 @@ export default function ProjectCard({
 								alt={title}
 							/>
 						))}
+						<LinkIcon
+							className={`absolute top-2 right-2 text-white transition-all ${
+								url ? "group-hover:scale-125" : "hidden"
+							}`}
+						/>
 					</div>
 				</Link>
 			</Tooltip>
-			<div className="flex flex-wrap items-center gap-2 h-12 rounded-xl bg-sky-800 px-2 py-1 max-w-max">
+			<div className="flex flex-wrap justify-start items-center gap-2 rounded-xl bg-sky-800 px-3 py-1">
 				{technologies.map((technology: TechBrand) => (
 					<Tooltip content={technology}>{techIcons[technology]}</Tooltip>
 				))}
 			</div>
-			<p className="text-white text-sm w-full max-w-[160px] xs:max-w-[340px]">
-				{description}
-			</p>
+			<p className="text-white text-sm">{description}</p>
 		</article>
 	);
 }

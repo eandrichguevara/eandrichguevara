@@ -30,8 +30,8 @@ export default function PrimeNGIcon(props: SVGProps<SVGSVGElement>) {
 			</mask>
 			<g mask="url(#mask0_1_36)">
 				<path
-					fill-rule="evenodd"
-					clip-rule="evenodd"
+					fillRule="evenodd"
+					clipRule="evenodd"
 					d="M15.1935 0V3.5994V3.58318V20.0075V20.0075V32.427V32.427L28.0364 25.3417L30.3478 5.38288L15.1935 0Z"
 					fill="#020617"
 				></path>
@@ -45,8 +45,8 @@ export default function PrimeNGIcon(props: SVGProps<SVGSVGElement>) {
 				fill="#f8fafc"
 			></path>
 			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
+				fillRule="evenodd"
+				clipRule="evenodd"
 				d="M11.3853 16.9726L12.6739 15.0309L13.4793 15.5163H16.7008L17.5061 15.0309L18.7947 16.9726V24.254L17.8283 25.7103L16.7008 26.843H13.4793L12.3518 25.7103L11.3853 24.254V16.9726Z"
 				fill="#f8fafc"
 			></path>
@@ -59,8 +59,8 @@ export default function PrimeNGIcon(props: SVGProps<SVGSVGElement>) {
 				fill="#f8fafc"
 			></path>
 			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
+				fillRule="evenodd"
+				clipRule="evenodd"
 				d="M13.0167 5.68861L11.7244 8.7568L13.8244 14.8932H14.7936V5.68861H13.0167ZM15.4397 5.68861V14.8932H16.5706L18.5091 8.7568L17.2167 5.68861H15.4397Z"
 				fill="#f8fafc"
 			></path>

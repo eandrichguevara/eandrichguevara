@@ -29,7 +29,7 @@ export default function RootLayout({
 			<body>
 				<Background />
 				<NavBar />
-				<main className="py-4 px-8">{children}</main>
+				<main className="py-4 px-4 md:px-8">{children}</main>
 			</body>
 		</html>
 	);
