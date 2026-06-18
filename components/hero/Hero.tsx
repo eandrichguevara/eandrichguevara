@@ -38,15 +38,13 @@ export default function Hero() {
 					</div>
 				</div>
 				<h1 className="mt-4 md:mt-0 leading-snug text-[2.3rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] font-encode-sans">
-					Desarrollador <span className="text-nowrap">Front End</span>
+					Desarrollador <span className="text-nowrap">Fullstack</span>
 				</h1>
 				<p className="mt-8 w-3/4 max-w-[760px]">
-					Soy un desarrollador de soluciones tecnológicas, destacándome por mi
-					rápida capacidad de aprendizaje y adaptabilidad. En mi portafolio
-					personal, encontrarás proyectos que reflejan mi compromiso con la
-					calidad, eficiencia y colaboración en equipo. Me especializo en crear
-					soluciones innovadoras, combinando habilidades técnicas y blandas para
-					impulsar el éxito de cada proyecto.
+					Desarrollador apasionado por construir productos digitales eficientes
+					y escalables. Me especializo en llevar proyectos desde la idea hasta
+					el despliegue, combinando diseño, código y servicios en la nube para
+					crear soluciones que realmente funcionan.
 				</p>
 			</section>
 
